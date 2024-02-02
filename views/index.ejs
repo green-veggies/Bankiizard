@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BankiiZard</title>
+    <script>
+        // Check if the page is being reloaded
+        if (performance.navigation.type === 1) {
+            // Redirect to the root page
+            window.location.href = "/";
+        }
+    </script>
+  </head>
+  <body>
+    <% if (locals.content){%> <%= content || error %> <% } else { %>
+    <form action="/submit" method="post">
+      <label for="postData">Enter your IFSC code:</label>
+      <input type="text" id="postData" name="postData" required />
+      <button type="submit">Submit</button>
+    </form>
+    <% } %>
+  </body>
+</html>
