@@ -4,7 +4,12 @@ import axios from "axios";
 const app = express();
 const port = 3000;
 
+app.use(express.static('public'));
+
+
 app.use(bodyParser.urlencoded({ extended: true }));
+
+//   IFSC -> BANK DETAILS
 app.get("/bankdetails", (req, res) => {
   res.render("bankdetails.ejs");
 });
@@ -12,7 +17,7 @@ app.post("/submit", async (req, res) => {
   try {
     const code = req.body.postData;
     const response = await axios.get(
-      "https://bank-apis.justinclicks.com/API/V1/IFSC/" + code
+      "https://ifsc.razorpay.com/" + code
     );
     res.render("bankdetails.ejs", { content: response.data});
   } catch (error) {
@@ -22,7 +27,13 @@ app.post("/submit", async (req, res) => {
     });
   }
   
+  //    CURRENCY CONVERTER
 });
+app.get("/currencyconv",(req,res)=>{
+  res.render("currencyconv.ejs");
+});
+
+
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
