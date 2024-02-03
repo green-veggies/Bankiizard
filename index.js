@@ -5,9 +5,8 @@ const app = express();
 const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
-
-app.get("/", (req, res) => {
-  res.render("index.ejs");
+app.get("/bankdetails", (req, res) => {
+  res.render("bankdetails.ejs");
 });
 app.post("/submit", async (req, res) => {
   try {
@@ -15,10 +14,10 @@ app.post("/submit", async (req, res) => {
     const response = await axios.get(
       "https://bank-apis.justinclicks.com/API/V1/IFSC/" + code
     );
-    res.render("index.ejs", { content: JSON.stringify(response.data) });
+    res.render("bankdetails.ejs", { content: response.data});
   } catch (error) {
     console.error("Failed to make request:", error.message);
-    res.render("index.ejs", {
+    res.render("bankdetails.ejs", {
       error: error.message,
     });
   }

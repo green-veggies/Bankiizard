@@ -12,7 +12,14 @@
     </script>
   </head>
   <body>
-    <% if (locals.content){%> <%= content || error %> <% } else { %>
+    <% if (locals.content && typeof content ==='object') {%> 
+      <h2>Bank Details:</h2>
+      <ul>
+        <% for (const key in content) { %>
+          <li><strong><%= key %>:</strong> <%= content[key] %></li>
+        <% } %>
+      </ul>
+      <% } else { %>
     <form action="/submit" method="post">
       <label for="postData">Enter your IFSC code:</label>
       <input type="text" id="postData" name="postData" required />
