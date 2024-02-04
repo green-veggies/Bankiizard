@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form-container{
+    /* background-color: aqua; */
+    height: 200px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+color: rgb(183, 231, 231);
+border-radius:2rem ;
+padding: 1rem;
+margin-left: 15rem;
+font-size: 1.4rem;
+border: 0.2px solid black;
+justify-content: space-between;
+box-shadow: 3px 5px 5px black;
+
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: url(IMG-20240204-WA0037.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+}
+.button1{
+    background-color: rgb(52, 80, 137);
+    padding: 0.2rem;
+    border-radius: 1rem;
+    border: none;
+    width: 6rem;
+    font-weight: 900; 
+    font-size: 1rem;
+    color: rgb(22, 21, 19);
+    margin-left: 3.3rem;
+    box-shadow:3px 5px 5px black;
+}
+#postData{
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 12rem;
+    border: 0.1rem solid black;
+    box-shadow:3px 5px 5px black;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 4rem;
+   
+}
+.text{
+    font-weight: 300;
+    text-shadow:5px 7px 4px black;
+}
+.button1:hover {
+     transform: scale(1.1);
+    transition-duration:200ms ;
+}

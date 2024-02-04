@@ -3,31 +3,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BankiiZard</title>
+
     <script>
-        // Check if the page is being reloaded
-        if (performance.navigation.type === 1) {
-            // Redirect to the root page
-            window.location.href = "/";
-        }
+      // Check if the page is being reloaded
+      if (performance.navigation.type === 1) {
+        // Redirect to the root page
+        window.location.href = "/bankdetails";
+      }
     </script>
+    <link rel="stylesheet" href="styles-ifsc.css" />
   </head>
   <body>
-    <% if (locals.content && typeof content ==='object') {%> 
-      <h2>Bank Details:</h2>
-      <ul>
-        <% for (const key in content) { %>
-          <li><strong><%= key %>:</strong> <%= content[key] %></li>
-        <% } %>
-      </ul>
-           <% } else { %>
-    <form action="/submit" method="post">
-      <label for="postData">Enter your IFSC code:</label>
-      <input type="text" id="postData" name="postData" required />
-      <button type="submit">Submit</button>
-    </form>
-    <% } %>
-    <% if (locals.error) { %>
-      <h1> <%= error %></h1>
+    <% if (locals.content && typeof content ==='object') {%>
+    <h2>Bank Details:</h2>
+    <ul>
+      <% for (const key in content) { %>
+      <li><strong><%= key %>:</strong> <%= content[key] %></li>
       <% } %>
+    </ul>
+    <% }else if (locals.error) { %>
+    <h1><%= error %></h1>
+    <% } else { %>
+    <div class="container">
+      <div class="form-container">
+        <form action="/submit" method="post" class="form">
+          <label class="text" for="postData">Enter your IFSC code:</label>
+          <input type="text" id="postData" name="postData" required />
+          <button class="button" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <% } %>
   </body>
 </html>
