@@ -21,9 +21,10 @@ app.post("/submit", async (req, res) => {
     );
     res.render("bankdetails.ejs", { content: response.data});
   } catch (error) {
-    console.error("Failed to make request:", error.message);
+    console.log("Failed to make request:", error.message);
+    const errorMessage = "Please enter a vaild IFSC code"
     res.render("bankdetails.ejs", {
-      error: error.message,
+      error: errorMessage,
     });
   }
   

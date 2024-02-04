@@ -19,12 +19,15 @@
           <li><strong><%= key %>:</strong> <%= content[key] %></li>
         <% } %>
       </ul>
-      <% } else { %>
+           <% } else { %>
     <form action="/submit" method="post">
       <label for="postData">Enter your IFSC code:</label>
       <input type="text" id="postData" name="postData" required />
       <button type="submit">Submit</button>
     </form>
     <% } %>
+    <% if (locals.error) { %>
+      <h1> <%= error %></h1>
+      <% } %>
   </body>
 </html>
