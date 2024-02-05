@@ -1,4 +1,4 @@
-// bankdetails.js
+
 import axios from "axios";
 
 const getBankDetailsPage = (req, res) => {
