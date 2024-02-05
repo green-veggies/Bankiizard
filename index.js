@@ -10,6 +10,11 @@ app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+//  Homepage
+app.get("/",(req,res)=>{
+  res.render("index.ejs");
+});
+
 //   IFSC -> BANK DETAILS
 
 app.get("/bankdetails", getBankDetailsPage);
