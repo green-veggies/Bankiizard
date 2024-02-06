@@ -1,7 +1,6 @@
 {
   "name": "bankiizard",
   "version": "1.0.0",
-  "description": "https://github.com/kaustubhk24/Indian-Banks-Data",
   "main": "index.js",
   "type": "module",
   "scripts": {
