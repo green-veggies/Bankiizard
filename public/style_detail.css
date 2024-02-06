@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .detail-container1{
@@ -9,15 +10,30 @@
 
 .detail-container{
     align-items: center;
-    height: 100%;
+    /* height:100%; */
 }
 
 @media screen and  (max-width:420px){
     .detail-container1{
-        height: auto;
-        width: auto;
+        /* height: auto;
+        width: auto; */
         align-items: center;
         background-image: url(Finance-Risk.jpg);
+       background-size: cover;
+    }
+    
+   
+     li{
+         margin-right: 3px;
+         width: 250px;
+         font-weight: 700;
+         font-size: 1rem;
+        
+     }
+     .heading{
+       
+        margin-left: 2rem;
+    
     }
 }
 
