@@ -8,7 +8,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: linear-gradient(to right, #15436c, #28cdee);
-    color: #fff;
+    color: #fff; 
     line-height: 1.6;
   }
   body::-webkit-scrollbar{
