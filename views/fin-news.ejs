@@ -8,8 +8,7 @@
 <body>
     <h1>Financial News</h1>
     <h2> To Keep You Updated with Business Insights.</h2>
-    <%= content%>
-
+    
     <% for (let i = 0; i < content.articles.length; i++) { %>
         <div>
             <h2><%= content.articles[i].title %></h2>
@@ -17,7 +16,6 @@
             <a href="<%= content.articles[i].url %>">Read more</a>
         </div>
     <% } %>
-
     
 </body>
 </html>

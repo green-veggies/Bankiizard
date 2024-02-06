@@ -27,18 +27,28 @@ toDropDown.value = "INR";
 let convertCurrency = () => {
   //Create References
   const amount = document.querySelector("#amount").value;
+  let validAmount;
+  if(amount>0){
+    validAmount = amount;
+  }
+  else if(amount < 0){
+    alert("Negative currencies are not allowed, CBI wants to know your location!");
+  }
+  else{
+    alert("Enter a valid value")
+  }
   const fromCurrency = fromDropDown.value;
   const toCurrency = toDropDown.value;
 
   //If amount input field is not empty
-  if (amount.length != 0) {
+  if (validAmount.length != 0) {
     fetch(api)
       .then((resp) => resp.json())
       .then((data) => {
         let fromExchangeRate = data.conversion_rates[fromCurrency];
         let toExchangeRate = data.conversion_rates[toCurrency];
-        const convertedAmount = (amount / fromExchangeRate) * toExchangeRate;
-        result.innerHTML = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(
+        const convertedAmount = (validAmount / fromExchangeRate) * toExchangeRate;
+        result.innerHTML = `${validAmount} ${fromCurrency} = ${convertedAmount.toFixed(
           2
         )} ${toCurrency}`;
       });
