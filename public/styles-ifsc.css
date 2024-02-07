@@ -20,13 +20,18 @@ box-shadow: 3px 5px 5px black;
 .container{
     height: 100%;
     width: 100%;
-    background-image: url(./WhatsApp\ Image\ 2024-02-04\ at\ 23.02.02_a1c35b1f.jpg);
+    background-image: url(WhatsApp\ Image\ 2024-02-04\ at\ 23.02.02_a1c35b1f.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center; 
 }
+@media screen and  (max-width:620px){
+  .form-container{
+      margin-left: 1rem;
+  }
+  }
 .button {
     display: flex;
     align-items: center;

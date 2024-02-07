@@ -19,18 +19,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles-ifsc.css" />
+    <link rel="stylesheet" href="style_detail.css">
   </head>
   <body>
-    <% if (locals.content && typeof content ==='object') {%>
-    <h2>Bank Details:</h2>
-    <ul>
-      <% for (const key in content) { %>
-      <li><strong><%= key %>:</strong> <%= content[key] %></li>
-      <% } %>
-    </ul>
+    
+      <div class="detail-container1">
+
+    <% if (locals.content && typeof content ==='object') {%>   
+    <!-- <h1 class="heading">Bank Details:</h1> -->
+<div class="detail-container">
+    <h1 class="heading">Bank Details:</h1>
+<ul>
+
+  <% for (const key in content) { %>
+  <li><strong><%= key %>  :  </strong> <strong style="color: rgb(110, 14, 212);"><%= content[key] %></strong> </li> 
+   <% } %>
+</ul>
+
+</div>
     <% }else if (locals.error) { %>
     <h1><%= error %></h1>
     <% } else { %>
+    </div>
+    
     <div class="container">
       <div class="form-container">
         <form action="/submit" method="post" class="form">
