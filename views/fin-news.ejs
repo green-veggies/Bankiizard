@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bankiizard - Your Financial Companion</title>
+    <link rel="stylesheet" href="style-fin-news.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <h1>Financial News</h1>
-    <h2> To Keep You Updated with Business Insights.</h2>
+    <header>
+        <h1>Financial News</h1>
+        <h2>To Keep You Updated with Business Insights.</h2>
+    </header>
 
-    <% for (let i = 0; i < content.articles.length; i++) { %>
-        <div>
-            <h2><%= content.articles[i].title %></h2>
-            <p><%= content.articles[i].description %></p>
-            <a href="<%= content.articles[i].url %>">Read more</a>
-        </div>
-    <% } %>
-    
+    <div class="container">
+        <% for (let i = 0; i < content.articles.length; i++) { %>
+            <article>
+                <h2><%= content.articles[i].title %></h2>
+                <p><%= content.articles[i].description %></p>
+                <a href="<%= content.articles[i].url %>">Read more</a>
+            </article>
+        <% } %>
+    </div>
 </body>
 </html>

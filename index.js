@@ -1,6 +1,5 @@
 import express from "express";
 import bodyParser from "body-parser";
-import axios from "axios";
 import { getBankDetailsPage, submitBankDetails } from "./routes/bankdetails.js";
 import getNews from "./routes/fin-news.js";
 const app = express();
