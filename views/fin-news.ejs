@@ -17,8 +17,8 @@
             <article>
                 <h2><%= content.articles[i].title %></h2>
                 <p><%= content.articles[i].description %></p>
-                <!-- <a href="<%= content.articles[i].url %>">Read more</a> -->
-                <iframe src="<%= content.articles[i].url %>" frameborder="0" width="100%" height="200px"> </iframe>
+                <!-- <iframe src="<%= content.articles[i].url %>" width="100%" height="200px"> read me</iframe> -->
+                <a href="<%= content.articles[i].url %>" target="box">Read more</a>
             </article>
         <% } %>
     </div>
