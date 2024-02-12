@@ -4,18 +4,20 @@
     font-family: 'Poppins', sans-serif;
 }
 .form-container{
-    height: 200px;
-    width: 330px;
+    height: 250px;
+    width: 380px;
     display: flex;
-    align-items: center;
+   align-items: center;
 color: rgb(183, 231, 231);
-border-radius:2rem ;
-padding: 1rem;
+border-radius:2rem;
+padding-right: 3rem;
 margin-left: 15rem;
 font-size: 1.4rem;
 border: 0.2px solid black;
 justify-content: space-between;
 box-shadow: 3px 5px 5px black;
+/* justify-content: center;
+align-items: center; */
 }
 .container{
     height: 100%;
@@ -33,20 +35,18 @@ box-shadow: 3px 5px 5px black;
   }
   }
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 40px;
     line-height: 1;
     text-decoration: none;
     color: #555555;
     font-size: 18px;
     border-radius: 20px;
-    width: 200px;
+    width: 150px;
     height: 40px;
     font-weight: bold;
     border: 2px solid #555555;
     transition: 0.3s;
-    box-shadow: 0px 6px 0px -2px rgba(67, 145, 209, 1);
+    box-shadow: 0px 6px 0px -2px rgb(113, 120, 125);
     background-color: #90caf9;
   }
   
@@ -57,12 +57,13 @@ box-shadow: 3px 5px 5px black;
   #postData {
     border-radius: 1rem;
     height: 2.5rem;
-    width: 15rem;
+    width: 14rem;
     border: 0.2rem solid #444; /* Darker border color for luxury feel */
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
     padding: 0.8rem; /* Increased padding for a more luxurious appearance */
     font-size: 1.2rem; /* Slightly larger font size */
     transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border color and box shadow */
+    
   }
   
   #postData:focus {
@@ -76,7 +77,7 @@ box-shadow: 3px 5px 5px black;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-left: 4rem;
+    padding-left: 4.7rem;
    
 }
 .text{
