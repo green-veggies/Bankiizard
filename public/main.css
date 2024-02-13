@@ -108,7 +108,8 @@ nav {
   }
   .feature-box1{
     display: flex;
-   
+    justify-content: center;
+    align-items: center;
   
   }
   @media (max-width:472px) {
@@ -128,6 +129,8 @@ nav {
   }
   .feature-box2{
     display: flex;
+    justify-content: center;
+    align-items: center;
    
   }
   .left-box2 img{
@@ -143,6 +146,8 @@ nav {
 
   .feature-box3{
     display: flex;
+    justify-content: center;
+    align-items: center;
    
   }
   .right-box3 img{
