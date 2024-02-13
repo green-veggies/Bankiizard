@@ -3,20 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(12 18 30);
+}
 
 .detail-container1{
-    background-image: url(Finance-Risk.jpg); 
+    background-image: url(Finance-Risk.jpg);
+    z-index: 100;
 }
 
 .detail-container{
     align-items: center;
-    /* height:100%; */
 }
 
 @media screen and  (max-width:420px){
     .detail-container1{
-        /* height: auto;
-        width: auto; */
         align-items: center;
         background-image: url(Finance-Risk.jpg);
        background-size: cover;
@@ -44,11 +45,12 @@ ul{
     align-items: center;
     flex-direction: column;
     justify-items: center;
-    margin-top: 3rem;   
+    margin-top: -5rem;
+    z-index: 200; 
 }
 
 li{
-    background-color: rgb(3, 4, 38);
+    backdrop-filter: blur(50px);
     padding: 0.5rem;
     align-items:center ;
     width: 300px;
