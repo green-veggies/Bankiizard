@@ -8,7 +8,7 @@
   }
   body {
   
-    background-image: url(new.jpg);
+    background-image: url(/assets/new.jpg);
      height: 100vh;
     width: 100%;
     background-position: center;
