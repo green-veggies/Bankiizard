@@ -8,7 +8,7 @@ body{
 }
 
 .detail-container1{
-    background-image: url(Finance-Risk.jpg);
+    background-image: url(/assets/Finance-Risk.jpg);
     z-index: 100;
 }
 
@@ -19,7 +19,7 @@ body{
 @media screen and  (max-width:420px){
     .detail-container1{
         align-items: center;
-        background-image: url(Finance-Risk.jpg);
+        background-image: url(/assets/Finance-Risk.jpg);
        background-size: cover;
     }
     
