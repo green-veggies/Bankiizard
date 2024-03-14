@@ -20,14 +20,27 @@ a {
 }
 
 .navbar {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #00246b, #3498db);
+    padding: 0.4rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hamburger {
     display: none;
+    margin-right: 2rem;
 }
 
 .bar {
@@ -38,6 +51,8 @@ a {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
+    
+
 }
 
 .nav-menu {
@@ -54,6 +69,7 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     color: #cdd0d3;
+   
 }
 
 .nav-logo {
@@ -68,7 +84,8 @@ a {
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #fff;
+        /* background-color: #fff; */
+        background: linear-gradient(to right, #123475, #364c5b);
         width: 100%;
         border-radius: 10px;
         text-align: center;
