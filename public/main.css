@@ -21,7 +21,7 @@ body {
   body::-webkit-scrollbar{
     display: none;
 }
-nav {
+/* nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -40,10 +40,7 @@ nav {
   }
 }
 
-  nav img {
-    height: 50px;
-    margin-right: 1rem;
-  }
+ 
   
   nav ul {
     list-style: none;
@@ -61,6 +58,10 @@ nav {
     color: #ecf0f1;
     font-size: 1.2rem;
     transition: color 0.3s;
+  } */ 
+  nav img {
+    height: 50px;
+    margin-right: 1rem;
   }
   
   nav a:hover {
