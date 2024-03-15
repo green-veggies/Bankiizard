@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 11px;
 
     /* background-color: #8ab6f5; */
  width: 100%;
@@ -226,6 +227,7 @@ body {
     transition: 0.5s;
     font-weight: 700;
     position:static;
+    
   }
   
   footer:hover {
@@ -321,6 +323,12 @@ flex-basis: 50%;
   padding: 2rem;
   padding-top: 4rem;
   gap: 2rem;
+  /* margin-top: 15rem; */
+  position:relative;
+  top:3rem;
+  margin: 6rem;
+  font-size: 1.5rem;
+  
 }
 
 .contact_info h2{
@@ -330,6 +338,8 @@ flex-basis: 50%;
 .contact_info a{
   text-decoration: none;
   color: aliceblue;
+ 
+
 /* display: flex;
 justify-content: space-between;
   justify-content: center; */
@@ -338,8 +348,10 @@ justify-content: space-between;
 }
 
 .contact_info img{
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  margin-left: 4rem;
+  margin-top: 1rem;
 }
 
 .contact_main{
@@ -351,6 +363,7 @@ justify-content: space-between;
  flex-wrap: wrap;
  padding: 1rem;
  border-radius: 2rem;
+
 }
 
 .contact_main h1{
@@ -396,10 +409,9 @@ justify-content: space-between;
   }
 }
 /* About */
-.about_footer{
-  position: absolute;
-}
+
 .container{
+ font-size: 1.5rem;
   border: 0.2px solid rgb(0, 0, 0);
   color:#fff ;
   display: flex;
@@ -410,6 +422,13 @@ justify-content: space-between;
   padding: 1rem;
   border-radius: 2rem;
   gap: 1rem;
+  /* position:static;
+  margin-top:15rem;
+
+ */
+ position:relative;
+ top:5rem;
+ margin: 6rem;
 }
 .container:hover {
   transform: scale(1.1s);
