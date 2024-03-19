@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 11px;
+    font-size:medium;
 
     /* background-color: #8ab6f5; */
  width: 100%;
@@ -169,7 +169,7 @@ body {
   
   .feature h2 {
     color: aliceblue;
-    font-size: 2rem;
+    font-size: 2.7rem;
     margin-bottom: 0.5rem;
   }
   
@@ -214,13 +214,13 @@ body {
     background: linear-gradient(to right, #00246b, #3498db);
     color: #ecf0f1;
     text-align: center;
-    padding:1rem;
+    padding: 1.5rem;
     width: 100%;
     transition: 0.5s;
     font-weight: 700;
-    position:static;
-    
-  }
+    position: static;
+    font-size: medium;
+}
   
   footer:hover {
     background: linear-gradient(to right, #34495e, #2f2d27);
@@ -248,13 +248,6 @@ body {
     height: 2rem;
     width: 2rem;
     border:none;
-}
-.logo{
-  width: 3rem;
-  height: 3rem; 
-  border-radius: 2rem;
-  margin:9px 9px ; 
- 
 }
 .box{
   display: flex;
@@ -373,9 +366,6 @@ justify-content: space-between;
   margin: 3rem;
 }
 @media (max-width:490px) {
-  .contact_container{
-    width: REM
-  }
   .contact_main{
     display: flex;
    align-items: center;
@@ -386,6 +376,7 @@ justify-content: space-between;
     position: absolute;
   }
 }
+
 @keyframes float {
   0% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);

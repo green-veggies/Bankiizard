@@ -18,6 +18,17 @@ li {
 a {
     text-decoration: none;
 }
+.logo{
+    width: 5rem;
+    border-radius:50%;
+    
+  }
+  .nav-img{
+    width:5rem;
+    height:5rem;
+    margin:9px 9px ;
+  }
+
 
 .navbar {
 
@@ -70,7 +81,11 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     color: #cdd0d3;
-   
+    transition: 0.3s;
+}
+.nav-link:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
 }
 
 
