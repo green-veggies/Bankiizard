@@ -325,10 +325,10 @@ flex-basis: 50%;
   gap: 2rem;
   /* margin-top: 15rem; */
   position:relative;
-  top:3rem;
-  margin: 6rem;
+  /* top:3rem; */
+  /* margin: 6rem; */
   font-size: 1.5rem;
-  
+ 
 }
 
 .contact_info h2{
@@ -379,19 +379,21 @@ justify-content: space-between;
   display: flex;
   justify-content: center;
   margin: 3rem;
+
 }
 @media (max-width:490px) {
   .contact_container{
-    width: REM
+    width: 400px;
   }
   .contact_main{
     display: flex;
    align-items: center;
-   width: 53%;
-   margin-top: 7rem;
+   width: 300px;
+   margin-top: 20rem;
   }
   footer {
     position: absolute;
+    top:915px
   }
 }
 @keyframes float {
@@ -429,6 +431,13 @@ justify-content: space-between;
  position:relative;
  top:5rem;
  margin: 6rem;
+}
+@media (max-width:472px) {
+  .container{
+    height: 900px;
+    margin-bottom: 100px;
+  }
+ 
 }
 .container:hover {
   transform: scale(1.1s);
