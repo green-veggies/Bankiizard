@@ -1,7 +1,9 @@
 import express from "express";
 import bodyParser from "body-parser";
+import dotenv from "dotenv";
 import { getBankDetailsPage, submitBankDetails } from "./routes/bankdetails.js";
 import getNews from "./routes/fin-news.js";
+dotenv.config();
 const app = express();
 const port = 3000;
 
